@@ -15,15 +15,21 @@ int score = 0;
 String answer = JOptionPane.showInputDialog(null, "What belongs to you, but is used by everyone else");
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
 String riddle = "your name";
-if(answer.equals(riddle))
+if(answer.equals(riddle)) {
 	//pop up 
 	JOptionPane.showMessageDialog(null, "Correct!");
+	score= score +1;
+}
 		// 5. Otherwise, say "wrong" and tell them the answer
+else {
+	JOptionPane.showMessageDialog(null, "Wrong, the answer is your name");
+}
+	// 6. Add some more riddles
 
-		// 6. Add some more riddles
-
-		// 2. Make a pop up to show the score.
-		
+//make a pop up to show the score.
+		JOptionPane.showMessageDialog(null, "Congrats your score is "+ score);
+	
+	
 	}
 }
 

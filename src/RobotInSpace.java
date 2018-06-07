@@ -24,9 +24,11 @@ import org.jointheleague.graphical.robot.Robot;
 
 	private void moveRobot(int keyPressed) throws InterruptedException {
 	    // 2. Print out the keyPressed variable and write down the numbers for each arrow key
+System.out.println(keyPressed);
+
 
 	    // 3. If the up arrow is pressed, move the Robot up the screen.
-		
+		rob.microMove(keyPressed);
 	    // 4. If the down arrow is pressed, move the Robot down.
 
 	    // 5. If the left arrow is pressed, make the Robot go left.
