@@ -40,7 +40,7 @@ System.out.println(keyPressed);
 
 	private void checkIfR2D2Found() throws Exception {
 	    int robotLocationX = rob.getX();
-	    int robotLocationY = rob.getY();
+	    int robotLocationY = rob.getY();b
 
 		if (robotLocationX <= 7300 && robotLocationX >= 720 && robotLocationY >= 150 && robotLocationY <= 160)
 	        playEureka();
